@@ -1,5 +1,6 @@
 import Interfaces.Figure;
 import Shapes.Triangle;
+import Shapes.Rectangle;
 import Shapes.Square;
 
 import java.util.ArrayList;
@@ -36,6 +37,18 @@ public class Main {
 
        try {
            figures.add(new Square(10));
+       } catch (RuntimeException e) {
+           System.out.println(e.getMessage());
+       }
+
+       try {
+           figures.add(new Rectangle(4, 5));
+       } catch (RuntimeException e) {
+           System.out.println(e.getMessage());
+       }
+
+        try {
+           figures.add(new Rectangle(-4, 5));
        } catch (RuntimeException e) {
            System.out.println(e.getMessage());
        }

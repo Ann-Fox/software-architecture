@@ -25,7 +25,7 @@ public class Triangle extends Figure {
     @Override
     public double calcArea() {
         double halfPerimeter = calcPerimeter() / 2;
-        return Math.sqrt(halfPerimeter * (halfPerimeter - sideA) *  (halfPerimeter - sideB) *  (halfPerimeter - sideC));
+        return Math.sqrt(halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC));
     }
 
     @Override
@@ -35,6 +35,7 @@ public class Triangle extends Figure {
 
     @Override
     public String getInfo() {
-        return "Triangle with " + sideA  + ", " + sideB + ", " + sideC + " has area: " + calcArea() + " and perimeter: " + calcPerimeter();
+        return "Triangle with " + sideA + ", " + sideB + ", " + sideC + " has area: " + calcArea() + " and perimeter: "
+                + calcPerimeter();
     }
 }
