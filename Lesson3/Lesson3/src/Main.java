@@ -1,5 +1,6 @@
 import Interfaces.Figure;
 import Shapes.Triangle;
+import Shapes.Circle;
 import Shapes.Rectangle;
 import Shapes.Square;
 
@@ -49,6 +50,12 @@ public class Main {
 
         try {
            figures.add(new Rectangle(-4, 5));
+       } catch (RuntimeException e) {
+           System.out.println(e.getMessage());
+       }
+
+         try {
+           figures.add(new Circle(5));
        } catch (RuntimeException e) {
            System.out.println(e.getMessage());
        }
