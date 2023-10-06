@@ -1,3 +1,5 @@
 class IModelChangedObserver {
-    
+    applyUpdateModel = function () {
+        
+    }
 }
