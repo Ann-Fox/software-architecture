@@ -2,7 +2,7 @@ public class Lada extends Car{
 
     public int aditionalWeels;
 
-    public Lada(String model, Transmition transmitionType, int numWeels, int aditionalWeels, String fuelType) {
+    public Lada(String model, Transmition transmitionType, int numWeels, int aditionalWeels, Fuel fuelType) {
         super("Lada", model, transmitionType, numWeels, fuelType);
         this.aditionalWeels = aditionalWeels;
     }
